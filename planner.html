@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSC106 Portfolio - Academic Planner</title>
+
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <header>
+      <div class="container">
+        <h1>Andrew Egere</h1>
+
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="planner.html">Planner</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <div class="container">
+        <section>
+          <h2>Academic Planner</h2>
+
+          <p>
+            Organize your study schedule by adding, completing, and deleting
+            academic tasks.
+          </p>
+        </section>
+
+        <section class="planner-card">
+          <h2>Add New Task</h2>
+
+          <input type="text" id="taskInput" placeholder="Enter a new task" />
+
+          <button id="addTaskBtn">Add Task</button>
+        </section>
+
+        <section class="planner-card">
+          <h2>My Tasks</h2>
+
+          <ul id="taskList">
+            <li>
+              Study for COS106
+
+              <button class="complete-btn">Complete</button>
+
+              <button class="delete-btn">Delete</button>
+            </li>
+
+            <li>
+              Complete SQL Practice
+
+              <button class="complete-btn">Complete</button>
+
+              <button class="delete-btn">Delete</button>
+            </li>
+
+            <li>
+              Build Power BI Dashboard
+
+              <button class="complete-btn">Complete</button>
+
+              <button class="delete-btn">Delete</button>
+            </li>
+          </ul>
+        </section>
+      </div>
+    </main>
+
+    <footer>
+      <div class="container">
+        <p>&copy; 2026 Andrew Egere. All Rights Reserved.</p>
+      </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,550 @@
+/* ==========================================
+   RESET
+========================================== */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ==========================================
+   COLOR PALETTE
+========================================== */
+
+:root {
+  --primary: #1e3a8a;
+  --secondary: #3b82f6;
+  --accent: #0ea5e9;
+  --background: #edf4fb;
+  --card: #ffffff;
+  --text: #334155;
+  --heading: #0f172a;
+  --border: #d8e5f2;
+  --shadow: rgba(15, 23, 42, 0.08);
+}
+
+/* ==========================================
+   BODY
+========================================== */
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: var(--background);
+  color: var(--text);
+  line-height: 1.7;
+}
+
+/* ==========================================
+   CONTAINER
+========================================== */
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* ==========================================
+   HEADER
+========================================== */
+
+header {
+  background: linear-gradient(135deg, #0f172a, #1e3a8a);
+  color: white;
+  padding: 25px 0;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+header h1 {
+  text-align: center;
+  font-size: 2.7rem;
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+}
+
+/* ==========================================
+   NAVIGATION
+========================================== */
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 18px;
+  flex-wrap: wrap;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  padding: 10px 18px;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+nav ul li a:hover {
+  background: rgba(255, 255, 255, 0.15);
+  color: white;
+  transform: translateY(-2px);
+}
+
+/* ==========================================
+   MAIN
+========================================== */
+
+main {
+  padding: 45px 0;
+}
+/* ==========================================
+   HERO SECTION
+========================================== */
+
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 50px;
+  flex-wrap: wrap;
+}
+
+.hero-text {
+  flex: 1;
+}
+
+.hero-text h2 {
+  font-size: 2.2rem;
+  color: var(--heading);
+  margin-bottom: 15px;
+}
+
+.hero-text p {
+  margin-bottom: 18px;
+  font-size: 1.05rem;
+}
+
+.hero-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.hero-image img {
+  width: 300px;
+  max-width: 100%;
+  border-radius: 15px;
+  border: 5px solid white;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease;
+}
+
+.hero-image img:hover {
+  transform: scale(1.03);
+}
+
+/* ==========================================
+   SECTIONS
+========================================== */
+
+section {
+  background: #ffffff;
+  border-left: 6px solid var(--secondary);
+  padding: 30px;
+  margin-bottom: 30px;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px var(--shadow);
+  transition: all 0.3s ease;
+}
+
+section:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 18px 35px rgba(0, 0, 0, 0.12);
+}
+
+section h2 {
+  color: var(--primary);
+  margin-bottom: 15px;
+  font-size: 1.8rem;
+}
+
+section h3 {
+  color: var(--heading);
+  margin-bottom: 15px;
+}
+
+section p {
+  margin-bottom: 12px;
+}
+
+section ul {
+  margin-left: 20px;
+}
+
+section li {
+  margin-bottom: 10px;
+}
+
+/* ==========================================
+   ABOUT PAGE
+========================================== */
+
+.about-card {
+  background: linear-gradient(to right, #ffffff, #f8fbff);
+}
+
+/* ==========================================
+   PROJECT CARDS
+========================================== */
+
+.project-card {
+  overflow: hidden;
+}
+
+.project-card img {
+  width: 100%;
+  border-radius: 10px;
+  margin: 20px 0;
+  transition: transform 0.35s ease;
+}
+
+.project-card img:hover {
+  transform: scale(1.02);
+}
+
+.project-card strong {
+  color: var(--primary);
+}
+
+.project-card a {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 22px;
+  background: var(--secondary);
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: 0.3s ease;
+}
+
+.project-card a:hover {
+  background: var(--primary);
+  transform: translateY(-2px);
+}
+
+/* ==========================================
+   IMAGES
+========================================== */
+
+img {
+  max-width: 100%;
+  display: block;
+}
+/* ==========================================
+   PLANNER
+========================================== */
+
+.planner-card {
+  background: linear-gradient(to right, #ffffff, #f8fbff);
+}
+
+#taskInput {
+  width: 75%;
+  max-width: 500px;
+  padding: 12px 15px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  font-size: 1rem;
+  margin: 15px 15px 15px 0;
+  outline: none;
+  transition: 0.3s ease;
+}
+
+#taskInput:focus {
+  border-color: var(--secondary);
+  box-shadow: 0 0 8px rgba(59, 130, 246, 0.25);
+}
+
+#taskList {
+  list-style: none;
+  margin-top: 20px;
+}
+
+#taskList li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 15px;
+  margin-bottom: 15px;
+  background: #f8fbff;
+  border-left: 5px solid var(--secondary);
+  border-radius: 8px;
+}
+
+/* ==========================================
+   CONTACT FORM
+========================================== */
+
+.contact-card {
+  background: linear-gradient(to right, #ffffff, #f8fbff);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+form label {
+  margin-top: 15px;
+  margin-bottom: 8px;
+  font-weight: 600;
+  color: var(--heading);
+}
+
+form input,
+form textarea {
+  padding: 14px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: 0.3s ease;
+  background: white;
+}
+
+form input:focus,
+form textarea:focus {
+  outline: none;
+  border-color: var(--secondary);
+  box-shadow: 0 0 8px rgba(59, 130, 246, 0.25);
+}
+
+textarea {
+  resize: vertical;
+  min-height: 140px;
+}
+
+/* ==========================================
+   BUTTONS
+========================================== */
+
+button,
+.project-card a {
+  cursor: pointer;
+}
+
+button {
+  background: var(--secondary);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 12px 20px;
+  font-size: 1rem;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background: var(--primary);
+  transform: translateY(-2px);
+}
+
+.button-group {
+  display: flex;
+  gap: 15px;
+  margin-top: 25px;
+  flex-wrap: wrap;
+}
+
+/* Planner Buttons */
+
+.complete-btn {
+  background: #10b981;
+}
+
+.complete-btn:hover {
+  background: #059669;
+}
+
+.delete-btn {
+  background: #ef4444;
+}
+
+.delete-btn:hover {
+  background: #dc2626;
+}
+
+/* ==========================================
+   FOOTER
+========================================== */
+
+footer {
+  margin-top: 40px;
+  background: linear-gradient(135deg, #0f172a, #1e3a8a);
+  color: white;
+  text-align: center;
+  padding: 25px 0;
+}
+
+footer p {
+  font-size: 0.95rem;
+  letter-spacing: 0.5px;
+}
+/* ==========================================
+   ANIMATIONS
+========================================== */
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(25px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.hero,
+section {
+  animation: fadeInUp 0.7s ease;
+}
+
+/* ==========================================
+   ACTIVE NAVIGATION
+========================================== */
+
+nav ul li a:active {
+  background: rgba(255, 255, 255, 0.25);
+}
+
+/* ==========================================
+   LINK STYLES
+========================================== */
+
+a {
+  transition: all 0.3s ease;
+}
+
+a:hover {
+  opacity: 0.9;
+}
+
+/* ==========================================
+   TABLE STYLING
+   (Ready if you decide to add a table later)
+========================================== */
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+table th,
+table td {
+  border: 1px solid var(--border);
+  padding: 12px;
+  text-align: left;
+}
+
+table th {
+  background: var(--primary);
+  color: white;
+}
+
+table tr:nth-child(even) {
+  background: #f8fbff;
+}
+
+/* ==========================================
+   RESPONSIVE DESIGN
+========================================== */
+
+@media (max-width: 992px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-text,
+  .hero-image {
+    width: 100%;
+  }
+
+  .hero-image img {
+    width: 240px;
+  }
+
+  #taskInput {
+    width: 100%;
+    margin-right: 0;
+  }
+
+  #taskList li {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 2rem;
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+  }
+
+  section {
+    padding: 20px;
+  }
+
+  .button-group {
+    flex-direction: column;
+  }
+
+  button {
+    width: 100%;
+  }
+
+  .project-card img {
+    margin: 15px auto;
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    font-size: 0.95rem;
+  }
+
+  header h1 {
+    font-size: 1.8rem;
+  }
+
+  section h2 {
+    font-size: 1.5rem;
+  }
+
+  .hero-image img {
+    width: 200px;
+  }
+}
+
+/* ==========================================
+   SMALL FINISHING TOUCHES
+========================================== */
+
+html {
+  scroll-behavior: smooth;
+}
+
+::selection {
+  background: var(--secondary);
+  color: white;
+}

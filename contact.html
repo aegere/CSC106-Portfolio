@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSC106 Portfolio - Contact</title>
+
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <header>
+      <div class="container">
+        <h1>Andrew Egere</h1>
+
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="planner.html">Planner</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <div class="container">
+        <section>
+          <h2>Contact Me</h2>
+
+          <p>
+            If you would like to get in touch with me, please complete the
+            contact form below.
+          </p>
+        </section>
+
+        <section class="contact-card">
+          <form id="contactForm">
+            <label for="fullName">Full Name</label>
+
+            <input
+              type="text"
+              id="fullName"
+              name="fullName"
+              placeholder="Enter your full name"
+              required
+            />
+
+            <label for="email">Email Address</label>
+
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Enter your email address"
+              required
+            />
+
+            <label for="phone">Phone Number</label>
+
+            <input
+              type="tel"
+              id="phone"
+              name="phone"
+              placeholder="Enter your phone number"
+              required
+            />
+
+            <label for="message">Message</label>
+
+            <textarea
+              id="message"
+              name="message"
+              rows="6"
+              placeholder="Type your message here..."
+              required
+            ></textarea>
+
+            <div class="button-group">
+              <button type="submit">Send Message</button>
+
+              <button type="reset">Reset</button>
+            </div>
+          </form>
+        </section>
+      </div>
+    </main>
+
+    <footer>
+      <div class="container">
+        <p>&copy; 2026 Andrew Egere. All Rights Reserved.</p>
+      </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
