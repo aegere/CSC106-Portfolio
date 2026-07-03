@@ -97,6 +97,7 @@ nav ul li a:hover {
 main {
   padding: 45px 0;
 }
+
 /* ==========================================
    HERO SECTION
 ========================================== */
@@ -141,6 +142,33 @@ main {
 
 .hero-image img:hover {
   transform: scale(1.03);
+}
+
+/* ==========================================
+   INTRODUCTION AUDIO
+========================================== */
+
+.intro-audio {
+  background: white;
+  padding: 30px;
+  margin-top: 40px;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+  text-align: center;
+}
+
+.intro-audio h2 {
+  color: var(--heading);
+  margin-bottom: 15px;
+}
+
+.intro-audio p {
+  margin-bottom: 20px;
+}
+
+.intro-audio audio {
+  width: 100%;
+  max-width: 500px;
 }
 
 /* ==========================================
@@ -193,6 +221,17 @@ section li {
   background: linear-gradient(to right, #ffffff, #f8fbff);
 }
 
+table {
+  width: 100%;
+  border-collapse: collapse;
+  overflow-x: auto;
+}
+
+th,
+td {
+  padding: 12px;
+}
+
 /* ==========================================
    PROJECT CARDS
 ========================================== */
@@ -203,9 +242,10 @@ section li {
 
 .project-card img {
   width: 100%;
+  height: 220px;
+  object-fit: cover;
   border-radius: 10px;
-  margin: 20px 0;
-  transition: transform 0.35s ease;
+  display: block;
 }
 
 .project-card img:hover {
@@ -275,13 +315,34 @@ img {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  flex-wrap: wrap;
-  gap: 10px;
+  gap: 15px;
   padding: 15px;
   margin-bottom: 15px;
   background: #f8fbff;
   border-left: 5px solid var(--secondary);
   border-radius: 8px;
+}
+.task-text {
+  flex: 1;
+  word-break: break-word;
+}
+
+.task-buttons {
+  display: flex;
+  gap: 10px;
+  flex-shrink: 0;
+}
+#emptyMessage {
+  text-align: center;
+  color: #64748b;
+  font-style: italic;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.completed {
+  text-decoration: line-through;
+  color: #6b7280;
+  font-style: italic;
 }
 
 /* ==========================================
